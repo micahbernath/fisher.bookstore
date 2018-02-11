@@ -11,30 +11,31 @@ namespace Fisher.Bookstore.Controllers
     {
         public IActionResult Index()
         {
-            var books = GetBooks();
-            return View(books);
+            // var books = GetBooks();
+            // return View(books);
+            return View();
         }
 
-        private IEnumerable<Book> GetBooks()
-        {
-            var books = new List<Book>();
+        // private IEnumerable<Book> GetBooks()
+        // {
+        //     var books = new List<Book>();
 
-            books.Add(new Book(){
-                Title = "Continuous Delivery",
-                Author = new Author() { Name = "Jez Humble" }
-            });
+        //     books.Add(new Book(){
+        //         Title = "Continuous Delivery",
+        //         Author = new Author() { Name = "Jez Humble" }
+        //     });
 
-            books.Add(new Book(){
-                Title = "Lean Enterprise",
-                Author = new Author() { Name = "Barry O'Reilly" }
-            });
+        //     books.Add(new Book(){
+        //         Title = "Lean Enterprise",
+        //         Author = new Author() { Name = "Barry O'Reilly" }
+        //     });
 
-            books.Add(new Book(){
-                Title = "The Goal",
-                Author = new Author() {Name = "Eliyahu Goldratt" }
-            });
+        //     books.Add(new Book(){
+        //         Title = "The Goal",
+        //         Author = new Author() {Name = "Eliyahu Goldratt" }
+        //     });
 
-            return books;
-        }
+        //     return books;
+        // }
     }
 }
